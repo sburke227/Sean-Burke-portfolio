@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+      <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="meetingBrief.html">Meeting Brief</a>
+                <a href="Investigate.html">Investigation</a>
+                <a href="PlanDesign.html">Plan & Design</a>
+                <a href="Implement.html" class="active">Create</a>
+                <a href="Testing.html" >Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <!-- Dropdown menu for small screens -->
+            <div class="dropdown" id="dropdownMenu">
+                <a href="meetingBrief.html">Meeting Brief</a>
+                <a href="Investigate.html">Investigation</a>
+                <a href="PlanDesign.html">Plan & Design</a>
+                <a href="Implement.html" class="active">Create</a>
+                <a href="Testing.html">Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+            </div>
+        </nav>
+<div style="padding:0 16px;">
+  <h2>CREATE (873words)</h2>
+  <h3>Progress log</h3>
+<h3>Week 1 - 4th Dec</h3>
+<ul>
+  <li>Analysed the brief and read it carefully to understand the task outlined.</li>
+  <li>Began planning how I would spread my time across the 12 weeks to ensure I would meet the deadline.</li>
+</ul>
+<h3>Week 2 - 11th Dec</h3>
+<ul>
+  <li>Developed a hypothesis that relates to the brief and fits the theme of wellbeing</li>
+  <li>Began researching how phone use affects users wellbeing and researched pre-existing solutions.</li>
+</ul>
+<h3>Week 3 - 18th Dec</h3>
+<ul>
+  <li>Conducted a survey on students in sixth and fifth year on how phone use affects their life.</li>
+  <li>Developed my idea based on the results I received from students who completed the survey, here is where I identified how I would meet the needs of the end users.</li>
+</ul>
+<h3>Week 4 - 8th Jan</h3>
+<ul>
+  <li>Began to work on my embedded system. Here is where I ran into my first problem.</li>
+  <li>Began testing how I could fix this issue and eventually came to a conclusion.</li>
+  <li>Tested my data logger and serial functions of the microbit ensuring the data could be exported to python. </li>
+</ul>
+<h3>Week 5 - 15th Jan</h3>
+<ul>
+  <li>Created a python script that received the data from the microbit. The code then took the data from the microbit and cleaned, validated it and stored it in a csv file.</li>
+  <li>I then created another python script that imported the data in the csv file and analysed it to calculate information to determine the effectiveness of my embedded system. </li>
+</ul>
+<h3>Week 6 - 5th Feb</h3>
+<ul>
+  <li>Created another python script as my model. This allowed me to predict information and help to make a prediction about the users wellbeing</li>
+  <li>Added a visual element to my model by creating graphs using matplotlib.</li>
+</ul>
+<h3>Week 7 - 12th Feb - Mid-term</h3>
+<h3>Week 8 - 19th Feb</h3>
+<ul>
+  <li>Created a test table for all the previous tests I had carried out during the creation of my model.</li>
+  <li>Created a Python script to perform unit testing on my model.</li>
+</ul>
+<h3>Week 9 - 26th Feb</h3>
+<ul>
+  <li>Began evaluating my code making any necessary improvements.</li>
+  <li>Carried out constant iterations to ensure there were no errors.</li>
+</ul>
+<h3>Week 10 - 4th Mar</h3>
+<ul>
+  <li>Took a video of the use of my microbit.</li>
+  <li>Screen recorded the rest of my video and completed a voice over.</li>
+</ul>
+<h3>Week 11 - 11th Mar</h3>
+<ul>
+  <li>Began to make my html and java script.</li>
+  <li>Began to make my css in order to ensure a positive user experience</li>
+</ul>
+<h3>Week 12 - 18th Mar</h3>
+<ul>
+  <li>Uploaded my Report to my website.</li>
+  <li>Uploaded my video to my website.</li>
+</ul>
+<h3>Unit testing</h3>
+<p>I tested my idea and code in various different ways.I found unit testing quite useful and iterated this constantly. Some examples of the unit testing I completed are as follows,</p>
+<p>1. My model asks users to input 12 different integers. I tested the result if these integers were entered as something else such as a string. I used the following code to test this:</p>
+<img src="unitTest1.png">
+<p>2. Next I tested the accuracy of my model. I ensured the time parameter was constant. I set a limit on the time of 2 hours or 7200 seconds to fit my chosen time measurement. I used the following code to ensure the time parameters were considered:</p>
+<img src="unitTest2.png">
+<h3>Problems I encountered</h3>
+<p>The first problem I encountered was when I was reading the brief when I was looking at basic requirements number 2. I did not fully understand data validation. To help me with this issue I used the Golden Keys Computer Science Book(Ref 5) and studied chapter 3(Analytics) . I was able to improve my knowledge on data validation and improve my project. 
+  The next problem I encountered was with my embedded system. I attempted to create a stopwatch but instead created a timer. What I mean by this is on the input screen down the timer would begin to count but when the on screen up input came after the time would continue to go up without resetting. To fix this problem I added an input for on button b pressed which will set the variable I created to 0 allowing the timer to reset.
+    The final problem I encountered was when I was completing my unit testing. While completing the function unitTest() and unitTest2(), the output of the test was always the same “Test result: Failed” regardless of the inputted data. I tried to change the conditions within the function but nothing worked. I then found out about global variables from W3Schools(Ref 6). By using  a global key it allowed me to take the variable from outside the function and change it inside the function. This helped me to allow the function to output “Test result: True”. 
+  </p>
+<h3>Key piece of code</h3>
+<p>The piece of code below was crucial to my project. Some key things to note about this is that totalTime1 is a variable I created to add together all of the time spent on a phone during study session 1 and totalTime2 is a variable that I created to add together all of the time spent on a phone during study session 2. Each study session was 2 hours long or 7200 seconds. So through the use of if, elif and else statements I was able to predict how phone use would impact the users emotional wellbeing depending on their phone use during the session.</p>
+<img src="keyCode.png">
+</div>
+
+
+
+<footer>
+  <a>&#169; Exam Number -145498 </a>
+</footer>
+
+<!-- Back-to-top button -->
+<button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679; Top</button>
+
+<script src="script.js"></script>
+</body>
+</html>

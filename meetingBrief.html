@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+      <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="meetingBrief.html" class="active">Meeting Brief</a>
+                <a href="Investigate.html">Investigation</a>
+                <a href="PlanDesign.html">Plan & Design</a>
+                <a href="Implement.html">Create</a>
+                <a href="Testing.html" >Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <!-- Dropdown menu for small screens -->
+            <div class="dropdown" id="dropdownMenu">
+                <a href="meetingBrief.html" class="active">Meeting Brief</a>
+                <a href="Investigate.html">Investigation</a>
+                <a href="PlanDesign.html">Plan & Design</a>
+                <a href="Implement.html">Create</a>
+                <a href="Testing.html">Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+            </div>
+        </nav>
+
+<div style="padding:0 16px;">
+  <h2>Meeting the Brief (400 words)</h2>
+  <h3>Video</h3>
+  <video width="640" height="360" controls>
+    <source src="" type="video/mp4">
+  </video>
+  <h3>Hypothesis</h3>
+  <p>I hypothesise that the removal of the incentive to use a mobile phone will reduce screen time and improve a users mood. I will do this by creating an annoyance such as an alarm, when the user picks up their device.</p>
+  <h3>What if questions</h3>
+  <p>1. What if the time entered by the user is greater than the allowed time of 7200 seconds ?</p>
+  <p>This is answered on lines 47-49 of my thonny script. If either session entered by</p>
+  <p> the user is greater than 7200 a string will be outputted saying the session is invalid.</p>
+  <p>2. What if the screen time while using the embedded system was greater than without ?</p>
+  <p>This is answered on lines 80-83 of my Python script. A message will be output to the user telling them that they need to take more drastic action such as leaving their device out of the room.</p>
+  <p>What if the user was to continue to use the embedded system during their study sessions ?</p>
+  <p>This is answered on line 67 of my Python script. This tells the users the estimated benefits they will receive if they were to use the embedded system in their next five study sessions.</p>
+  <h3>Basic requirements</h3>
+  <p>1. I met the first basic requirement by creating an embedded system using a micro-bit. This microbit will include both digital/analogue inputs and outputs as set out in the brief.</p>
+  <p>2. I met the second basic requirement by creating a Python script to validate and store my data. This data is received using a serial import from the microbit. Thonny will then store this data into a csv file. </p>
+  <p>3. I met the third basic requirement by creating a Python script to analyse and make calculations from the data . </p>
+  <h3>Advanced requirements</h3>
+  <p>1. I met the first advanced requirement by creating a Python script to create a computer based model. This helped predict the wellbeing of the end users. This model will use data inputted by the user. I then completed three What If questions based on potential scenarios in my model.</p>
+  <p>2. I met the  second advanced requirement by ensuring I had three valid parameters for each question. These included parameters such as the total time spent in each session, the average time users spent on their phone and the mood that the user would be in after their study session.</p>
+  <p>3. I met the third advanced requirement using the Matplotlib extension in my model script. This allowed me to graph the users data and allow them to visualise their progress and the succession of the embedded system.</p>
+</div>
+
+<footer>
+  <a>&#169; Exam Number - 145498</a>
+</footer>
+
+<!-- Back-to-top button -->
+<button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679; Top</button>
+
+<script src="script.js"></script>
+</body>
+</html>

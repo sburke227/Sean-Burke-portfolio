@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+      <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="meetingBrief.html">Meeting Brief</a>
+                <a href="Investigate.html">Investigation</a>
+                <a href="PlanDesign.html" class="active">Plan & Design</a>
+                <a href="Implement.html">Create</a>
+                <a href="Testing.html" >Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <!-- Dropdown menu for small screens -->
+            <div class="dropdown" id="dropdownMenu">
+                <a href="meetingBrief.html">Meeting Brief</a>
+                <a href="Investigate.html">Investigation</a>
+                <a href="PlanDesign.html" class="active">Plan & Design</a>
+                <a href="Implement.html">Create</a>
+                <a href="Testing.html">Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+            </div>
+        </nav>
+
+<div style="padding:0 16px;">
+  <h2>Design (440 words)</h2>
+  <p>My design involves the use of  a micro-bit. The reaction will be stimulated by the end-user picking up their phone. I will use the onscreen down input. This will set off an alarm and the string “stop” to be displayed using LEDS. This activates until the phone is put down. This removes the incentive for the user to use the device. This improves the holistic wellbeing of the user as it improves their physical health “There are concerns that the low levels of RF radiation emitted by mobile phones could cause health problems such as headaches or brain tumors”(Ref 4). It will also improve their emotional or mental health by boosting our mood, evidence shows that features of mobile phones such as social media can cause stress levels to increase</p>
+  <h3>Basic requirements</h3>
+  <p>1. I will meet the first requirement by creating an embedded system using a micro-bit. This microbit will have digital/analogue inputs and outputs such as outputting sound or strings and inputting data with the use of the buttons.
+  <p>2. I will validate and store my data using a serial to export the data to Thonny. Thonny will then store this data into a csv file. The python script will clean and validate the data.</p>
+  <p>3. My analysis component takes data from my csv and calculates the mean, median, max and min. This will help to show the effectiveness of my project and allow me to decide on areas of improvement for the future.</p>
+  <h3>Advanced requirements</h3>
+  <p>1. I created a model using python to help predict the wellbeing of the end users. This model will use data inputted by the user to make predictions about the users wellbeing.</p>
+  <p>2. I created my three what if questions based on scenarios that I felt could arise in the model. I had three valid parameters for each such as the total time spent in each session, the average time users spent on their phone and the mood that the user would be in after their study session.</p>
+  <p>3. In my model the data entered by the user was both while using the embedded system I created and without. I then took this data and displayed it in a graphical format to help the end user visualize how their wellbeing has improved through the use of the embedded system.</p>
+  <h3>End user requirements</h3>
+  <p>The end users of my project will be students. I will meet their requirements by improving their emotional or mental wellbeing. I will do this by reducing their screen time in the hope that this will improve their mood.</p>
+  <h3>Software used:</h3>
+  <p>1. Thonny</p>
+  <p>2. Visual studio code</p>
+  <p>3. Google Drive</p>
+  <p>4. Makecode.microbit</p>
+  <h3>Hardware used:</h3>
+  <p>1. Microbit</p>
+  <p>2. School computer</p>
+  <p>3. Webcam</p>
+  <h3>Flowchart</h3>
+  <img src="flow chart.png">
+</div>
+
+<footer>
+  <a>&#169; Exam Number - 145498</a>
+</footer>
+
+<!-- Back-to-top button -->
+<button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679; Top</button>
+
+<script src="script.js"></script>
+</body>
+</html>
